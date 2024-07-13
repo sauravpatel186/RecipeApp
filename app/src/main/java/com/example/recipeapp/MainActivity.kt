@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity() {
         val btnShow = findViewById<Button>(R.id.showBtn)
         val recipeText = findViewById<TextView>(R.id.recipeText)
 //        val headText2 = findViewById<TextView>(R.id.headText2)
-        var recipe= arrayOf("Please select a receipe","Veggie Burger","Caesar Salad","Chinese")
+        var recipe= arrayOf("Please select a recipe","Veggie Burger","Caesar Salad","Chinese")
 
         var recipeList = ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,recipe)
-        var selectedReceipe = "Please select a receipe"
+        var selectedReceipe = "Please select a recipe"
         spinnerR.adapter = recipeList
         spinnerR.onItemSelectedListener = object :
             AdapterView.OnItemSelectedListener {
@@ -40,18 +40,18 @@ class MainActivity : AppCompatActivity() {
        btnShow.setOnClickListener { view->
             when(selectedReceipe){
                  "Caesar Salad"->{recipeText.text = recipeCeasersalad()
-                     headText.text = "Here is your \nceasar salad receipe"
+                     headText.text = "Here is your \nceasar salad recipe"
 //                     headText2.text = "Ceasar Salad Receipe"
                  }
                  "Veggie Burger"->{
                      recipeText.text = recipeBurger()
-                     headText.text = "Here is your \nveggie burger receipe"
+                     headText.text = "Here is your \nveggie burger recipe"
 //                     headText2.text = "Veggie Burger Receipe"
                  }
 
                 "Chinese"->{
                     recipeText.text =  recipeChinese()
-                    headText.text = "Here is your \nchinese receipe"
+                    headText.text = "Here is your \nchinese recipe"
 //                    headText2.text = "Chinese Receipe"
                 }
 
@@ -65,23 +65,23 @@ class MainActivity : AppCompatActivity() {
     }
     fun recipeCeasersalad():String{
 
-        var receipe:String = "${bulletSymbol} 1 large or 2 small heads of romaine lettuce\n" +
+        var recipe:String = "${bulletSymbol} 1 large or 2 small heads of romaine lettuce\n" +
                 "${bulletSymbol }Parmesan cheese, shredded or shaved\n" +
                 "${bulletSymbol} Crisp croutons – homemade can be made several days ahead. The recipe below makes enough for 2 salads.\n" +
                 "${bulletSymbol} Caesar salad dressing – homemade is best and here is our favorite store-bought dressing in a pinch"
-        return receipe
+        return recipe
     }
     fun recipeBurger():String{
-    var receipe:String = "To make veggie burger follow the steps\n"+"${bulletSymbol} Take one sliced cheese\n" +
+    var recipe:String = "To make veggie burger follow the steps\n"+"${bulletSymbol} Take one sliced cheese\n" +
             "${bulletSymbol} Take 2 or 3 tomato slices and 1 or 2 onion slices\n" +
             "${bulletSymbol} Take 8 or 9 slices of Cucumber\n" +
             "${bulletSymbol} Heat the pan on low flame apply butter and then toast the bun\n"+
             "${bulletSymbol} Put onion slices then put tomato slices on top of that after that put cucumber slices on top add sauces such as thousand islands,mayonnaise, ranch sauce\n"+
             "${bulletSymbol} Put cheese slice then enjoy\n"
-    return receipe
+    return recipe
 }
     fun recipeChinese():String{
-        var receipe:String = "To make chinese follow the steps\n"+"${bulletSymbol} Cut the onions and make thin slices of it\n" +
+        var recipe:String = "To make chinese follow the steps\n"+"${bulletSymbol} Cut the onions and make thin slices of it\n" +
                 "${bulletSymbol} Chop bell peppers,carrots and cabbage also garlic and chilli also\n" +
                 "${bulletSymbol} Boil the noodles in large pan for around 10 to 15 minutes\n" +
                 "${bulletSymbol} Rinse the noodles with water then add 1tbsp so that noodles do not become sticky\n"+
@@ -89,6 +89,6 @@ class MainActivity : AppCompatActivity() {
                 "${bulletSymbol} Add bell peppers,carrots and cabbage saute it for 1 minute and add salt according to your taste\n"+
                 "${bulletSymbol} Add boiled noodles then pour green chilli, red chilli, soy sauce and vinegar according to your taste \n"+
                 "${bulletSymbol} Enjoy, it"
-        return receipe
+        return recipe
     }
 }
