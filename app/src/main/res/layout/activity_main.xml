@@ -13,7 +13,7 @@
         android:layout_width="305dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="What we\nare we cooking today?"
+        android:text="Spin &amp; Cook\nYour Recipe Picker"
         android:textColor="@color/black"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"

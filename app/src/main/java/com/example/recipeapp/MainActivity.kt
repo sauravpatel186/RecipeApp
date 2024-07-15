@@ -58,17 +58,18 @@ class MainActivity : AppCompatActivity() {
 
 
                 else -> {recipeText.text = "Please select any one option"
-                headText.text ="What we\nare we cooking today?"}
+                headText.text ="Spin & Cook\nYour Recipe Picker"}
             }
     }
 
     }
     fun recipeCeasersalad():String{
 
-        var recipe:String = "${bulletSymbol} 1 large or 2 small heads of romaine lettuce\n" +
-                "${bulletSymbol }Parmesan cheese, shredded or shaved\n" +
-                "${bulletSymbol} Crisp croutons – homemade can be made several days ahead. The recipe below makes enough for 2 salads.\n" +
-                "${bulletSymbol} Caesar salad dressing – homemade is best and here is our favorite store-bought dressing in a pinch"
+        var recipe:String = "To make Caesar salad follow the steps\n"+"${bulletSymbol} 1 large romaine lettuce\n" +
+                "${bulletSymbol } Shredded or shaved Parmesan cheese\n" +
+                "${bulletSymbol} Add Crisp croutons in the salad\n" +
+                "${bulletSymbol} Add Caesar salad dressing\n"+
+                "${bulletSymbol}Enjoy it"
         return recipe
     }
     fun recipeBurger():String{
