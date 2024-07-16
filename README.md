@@ -1,7 +1,5 @@
 <p>I have created a recipe app that prompts the user to select the dish from the spinner and when the user clicks the button it shows the recipe of the dish.</p>
 <img src=https://github.com/user-attachments/assets/f613b6f1-b17f-4fdd-bf28-c9cab562e672 width=500px height=1000px/>
-
-
 <img src=https://github.com/user-attachments/assets/7bd64b96-363b-4fc2-aa60-a24221518b55
  width=500px height=1000px/>
 <img src=https://github.com/user-attachments/assets/acfa9a60-b8ae-45e9-9f2f-2f01cf6e5e9a
